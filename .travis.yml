@@ -15,7 +15,7 @@ before_script:
 script:
   - pyflakes .
   # - py.test
-  - py.test --cov=module tests/
+  - py.test --cov=src/module src/tests/
 
 after_success:
   - coveralls
