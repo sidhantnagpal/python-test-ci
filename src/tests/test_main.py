@@ -1,4 +1,4 @@
-from ..main import adder, maxima
+from ..module.main import adder, maxima
 
 def test_adder_maxima_unpack():
 	seq = [1, 2, 3, 4]
