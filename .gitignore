@@ -1,0 +1,8 @@
+*.pyc
+*.pyo
+dist/
+build/
+.coverage
+covhtml/
+.pytest_cache/
+__pycache__

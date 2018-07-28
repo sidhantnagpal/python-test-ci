@@ -1,0 +1,20 @@
+language: python
+
+sudo: false
+python:
+  - 2.7
+  - 3.5
+
+install:
+  # - pip install -r requirements.txt
+  - pip install pyflakes pytest coveralls
+
+before_script:
+  - export PYTHONPATH=$PYTHONPATH:$(pwd)
+
+script:
+  - pyflakes .
+  - py.test
+
+after_success:
+  - coveralls
